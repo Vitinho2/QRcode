@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+  --White: #ffffff;
+  --LightGray: #d6e2f0;
+  --GrayishBlue: #7b879d;
+  --DarkBlue: #1f3251;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  background-color: var(--LightGray);
+}
+
+.cardQRcode{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  height: 497px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .212);
+  background-color: var(--White);
+}
+
+.qrcode{
+  background-image: url(./assets/image-qr-code.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+}
+
+.description{
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.textPrinci{
+  color: var(--DarkBlue);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.textSecondary{
+  color: var(--GrayishBlue);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 330px) {
+  .cardQRcode{
+    width: 220px;
+    height: 397px;
+  }
+
+  .qrcode{
+    width: 188px;
+    height: 188px;
+  }
+}
